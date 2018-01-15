@@ -1,85 +1,352 @@
-/*body {background-image: url(../images/lornabackground.jpg);
-background-repeat: no-repeat;
-opacity: 0.6;
-}
-*/
-.navcolor{
-	color: #455560;
+.image {
+    border-radius: 50%;
+    padding-top: 40px;
 }
 
-.my-container {
-    position: relative;
-
+.portCards {
+    padding-top: 90px;
 }
 
-.my-container:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8;
-    background-image: url(../images/lornabackground.jpg);
+
+#index-banner {
+    background: linear-gradient(rgba(0, 0, .34, 0.10), rgba(0, 0, 0, 0.55)),
+    rgba(0, 0, 0, 0.55) no-repeat center;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
     background-size: cover;
-}
-
-.my-container h1 {
-    padding: 30px;
-    text-align: center;
     z-index: 2;
-    position: relative;
-    margin-bottom: -20px;
+    padding: 0px;
+    margin: 0px;
+    height: 1000px;
     color: #fff;
-    font-size: 100px;
-    font-family: 'Caveat', cursive;
-} 
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 15px 80px 15px;
+    text-align: right;
+    min-height: 640px;
+}
 
-h5 {
-	font-size: 105px;
-	padding: 10px;
+
+.material-icons{
+  text-align: right;
+}
+
+span {
+  font-family: 'Satisfy', cursive;
+  padding: 0px;
+  font-size: 90px;
+  margin-bottom: 0px;
+}
+
+.contact{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.btn.waves-effect.waves-light { border: 2px solid #fff; }
+
+.i{
+  text-align: right;
+
+
+}
+
+/*#waypoint h1 {
+  font-size:20px; 
+  font-weight:800;
+}
+#waypoint p {
+  margin-bottom:80px;
+  height:30px;
+}
+#waypoint a {
+  border:4px solid $color;
+  color:$color;
+  background:#fff;
+  height:70px;
+  line-height:70px;
+  transition:.3s ease;
+  font-weight:600;   
+  position:relative;
+    &:hover {
+       border-color:$color;
+       color:#fff;
+       background:$color;
+       text-decoration:none; 
+    }
+  &:focus {
+      color:$color;
+      background:#fff;
+      text-decoration:none;
+  }
+  &:active {
+     color:#fff;
+    background:$color;
+  }
+}
+.notifications {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: $color;
+}
+.tline {
+  background: $color;
+    width: 48px;
+    height: 2px;
+    margin: 15px auto;
+}
+.icon_box img {
+  width:100px;
+}
+.icon_box {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 250px; 
+  background: #fff; 
+  text-align:center;
+  padding-top:20%;
+ background:url('./assets/images/lornabackground1.jpg') center center no-repeat;
+  background-size:contain;
+    height: 195px;
+    line-height: 195px;
+    vertical-align: middle; 
+  overflow:hidden;
+}
+
+
+/* IMG ANI 
+@mixin tranny($tran) {
+  -webkit-transition: $tran;
+  -moz-transition: $tran;
+  -o-transition: $tran ;
+  -ms-transition: $tran;
+}
+.slideIn1, .slideIn2, .slideIn3 {
+  @include tranny(all .8s ease-in-out); 
+}
+.bounceIn1, .bounceIn2, .bounceIn3 {
+  @include tranny(all .5s ease-in-out); 
+}
+.img1,
+.img2,
+.img3 {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.slideIn1 {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+}
+
+.slideIn2 {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+}
+
+.slideIn3 {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+}
+
+
+/* text ANI */
+
+/*.text1,
+.text2,
+.text3 {
+    opacity: 0;
     text-align: center;
-    z-index: 2;
-    position: relative;
-    margin-bottom: -10px;
-    color: #fff;
-    /*font-family: 'Caveat', cursive;*/
+    transform: scale(.5);
 }
 
-.center-btn { 
-	text-align: center;
-	 z-index: 2;
-
+.bounceIn1 {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    transition-delay: 1.5s;
+    -webkit-transition-delay: 1.5s;
 }
 
-.ghost-button {
-  display: inline-block;
-  width: 150px;
-  padding: 8px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out,
-              border-color 0.2s ease-out;
-}
-.ghost-button:hover,
-.ghost-button:active {
-  background-color: #fff; 
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: #fff; 
-  border-color: rgba(255, 255, 255, 0.4);
-  transition: background-color 0.3s ease-in,
-              border-color 0.3s ease-in;
+.bounceIn2 {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    transition-delay: 1.9s;
+    -webkit-transition-delay: 1.9s;
 }
 
+.bounceIn3 {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    transition-delay: 2.3s;
+    -webkit-transition-delay: 2.3s;
+}
 
+.slideInLeft {
+    transform: translate(0) !important;
+    opacity: 1 !important;
+}
+
+.slideInRight {
+    transform: translate(0) !important;
+    opacity: 1 !important;
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 100vh;
+    min-height: 60vh;
+
+
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+        background-color: blue;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0.20;
+        -moz-opacity: 20%;
+        -webkit-opacity: 20%;
+        z-index: 2;
+    }
+    #index-banner .section {
+        top: 10%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+#nav-mobile {
+    margin-top: 64px;
+}
+
+#nav-mobile li {
+    padding: 0px;
+}
+
+.main-navigation {
+    z-index: 999; // position:absolute;
+}
+
+.intro {
+    overflow: hidden;
+}
+
+.ppad {
+    padding: 65px;
+}
+
+.wp1,
+.wp2,
+.wp3,
+.wp4 {
+    transition: 1.4s ease;
+}
+
+.wp1 {
+    opacity: 0;
+    text-align: center;
+    transform: translateX(-100px);
+}
+
+.wp2 {
+    opacity: 0;
+    text-align: center;
+    transform: translateX(100px);
+}
+
+.wp3 {
+    opacity: 0;
+    text-align: center;
+    transform: translateX(-100px);
+}
+
+.wp4 {
+    opacity: 0;
+    text-align: center;
+    transform: translateX(100px);
+}
+
+.parallax #canvas {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: 999999;
+    opacity: .9;
+}
+
+.main-navigation li a {
+    color: #fff !important;
+}
+
+// http://raumrot.com/wp-content/uploads/2015/12/msp_1009_7082-1.jpg*/
