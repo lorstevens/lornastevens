@@ -91,9 +91,7 @@ margin: 0px;
   padding-top: 5%;
 }
 
-h5{
-  text-align: center;
-}
+
 
 
 h3{
@@ -102,11 +100,16 @@ font-family: 'Satisfy', cursive;
 color: black;
 }
 
-ul{
-  text-align: center;
+.card{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
 }
 
 .card-image{
-  filter: grayscale(80%);
+  filter: grayscale(40%);
 }
 
+.footer{
+  padding-top: 2%;
+}
