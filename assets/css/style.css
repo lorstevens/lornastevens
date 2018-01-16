@@ -107,7 +107,13 @@ color: black;
 }
 
 .card-image{
-  filter: grayscale(40%);
+  /*filter: grayscale(50);*/
+  opacity: .5;
+}
+
+.card-image:hover {
+  opacity: 1;
+  filter: alpha(opacity=1); 
 }
 
 .footer{
