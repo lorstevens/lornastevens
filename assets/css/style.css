@@ -71,6 +71,27 @@ margin-bottom: 0px;
 margin: 0px;
 }
 
+.col .s6 .right{
+  margin-right: 5%;
+  color: red;
+}
+
+.about{
+  text-align: center;
+  padding: 90px;
+}
+
+.myPort{
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+h5{
+  text-align: center;
+}
+ul{
+  text-align: center;
+}
 
 /*  height: 100%;
     width: 48%;
