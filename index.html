@@ -7,23 +7,33 @@
 </head>
 
 <body>
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
     <!-- Materalize CSS Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Materalize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <!--Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <!--JQuery-->
+
+
+      <!--JQuery-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!--Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  
+    <!--Masonry-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
 
 
     <!--Intro Parallax-->
+
     <div id="index-banner" class="parallax-container">
         <!-- <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a> -->
         <div class="navbar-fixed">
@@ -31,36 +41,34 @@
             <!-- Dropdown Structure -->
             <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="#index-banner2" class="grey-text">About</a></li>
-                <li><a href="#portfolio" class="grey-text">Portfolio</a></li>
+                <li><a href="#projectBoard" class="grey-text">Portfolio</a></li>
                 <li><a href="#connect" class="grey-text">Connect</a></li>
             </ul>
         </div>
 
 
-
-
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br>
-            <br>
-            <div class="header center">
-                <span class="welcome white-text text-darken-4">Hi, I'm Lorna</span>
+        <div class="section no-pad-bot">
+            <div class="container">
                 <br>
-                <h5>Full Stack Developer specializing in
+                <br>
+                <div class="header center">
+                    <span class="welcome white-text text-darken-4">Hi, I'm Lorna</span>
+                    <br>
+                    <h5>Full Stack Developer specializing in
                     <span
                      class="txt-rotate"
                      data-period="2000"
                      data-rotate='[ "JavaScript", "HTML/CSS", "JQuery", "React.js", "Express.js" ]'>                       
                      </span>
                 </h5>
+                    <br>
+                    <a href="mailto:lornacstevens@gmail.com" id="was_download-button" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Contact</a>
+                    <a href="./assets/images/Lorna_Stevens_Resume.pdf" target="_blank" id="was_download-button" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Resume </a>
+                </div>
                 <br>
-                <a href="mailto:lornacstevens@gmail.com" id="was_download-button" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Contact</a>
-                <a href="./assets/images/Lorna_Stevens_Resume.pdf" target="_blank" id="was_download-button" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Resume </a>
+                <br>
             </div>
-            <br>
-            <br>
         </div>
-    </div>
 
         <div class="parallax">
             <div id="canvas" width="" height="">
@@ -69,171 +77,265 @@
         </div>
 
     </div>
-    
-    <div class="myPort container">
-        <div class="row">
-            <div id="portfolio" class="section intro ">
-                <h3  id="portWork" class="header center grey-text text-darken-1">
-                    Check out some of my work. 
-                </h3>                                  
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/snapshot.png">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Snapshot<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://lorstevens.github.io/snapshot/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Snapshot<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px">Application using Google Maps, Places and GeoCode APIs. After submitting address, user will see a 'snapshot' of the area, which includes street view image, images from city and Google Map location. </p>
 
-                        </div>
-                    </div>
-                </div>
-            
 
-           
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/mm.png">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Mavens/Mavericks<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Mavens/ Mavericks<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px">A full stack social media app that pairs mentors and mentees together. Built with React, Node.js, Express, Axios, and Mongoose. </p>
-                        </div>
-                    </div>
-                </div>
+<!--Project Section-->
 
-            
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/train.jpg">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Train Time<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://lorstevens.github.io/traintime/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Train Time<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px">Uses Firebase and Moment.js to store and calculate the next train arrival.</p>
-                        </div>
+<div id= "projectBoard" class="animateWidth masonry" style="margin: 0px auto; position: relative; height: 950px; width: 925px;">
+    <h3 class="projects grey-text">Check out some of my projects</h3>
+ <div class="grid">
+    <div class="item photo">
+    <div class="content">
+      <div class="port-container">
+                <img src="./assets/images/burger.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">Lorna Burg
+                        <br>
+                        <i href="#modal4" style="font-size: 50px" class="material-icons modal-trigger">info</i>
                     </div>
                 </div>
             </div>
+    </div>
+  </div>
+  
+  <div class="item photo">
+    <div class="content">
+      <div class="port-container">
+                <img src="./assets/images/friend.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">Friend Finder
+                        <br>
+                        <i href="#modal6" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+  <div class="item photo">
+    <div class="content">
+              <div class="port-container">
+                <img src="./assets/images/mav.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">Mavens and Mavericks
+                        <br>
+                        <i href="#modal2" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+  
+  <div class="item project">
+    <div class="content">
+
+      <div class="port-container">
+                <img src="./assets/images/train.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">TrainTime
+                        <br>
+                        <i href="#modal3" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="item photo">
+    <div class="content">
+     <div class="port-container">
+                <img src="./assets/images/snap.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">Snapshot
+                        <br>
+                        <i href="#modal1" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+  
+  <div class="item project">
+    <div class="content">
+
+        <div class="port-container">
+                <img src="./assets/images/leslie.png" alt="Avatar" class="imageBird">
+                <div class="overlay">
+                    <div class="text">Giphy Fun
+                        <br>
+                        <i href="#modal5" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+                    </div>
+                </div>
+            </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- MODALS -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Snapshot</h4>
+            <p>Application using Google Maps, Places and GeoCode APIs. After submitting address, user will see a 'snapshot' of the area, which includes street view image, images from city and Google Map location.</p>
+            <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>Google APIs</li>
+                <li>JQuery</li>
+                <li>Materialize CSS Framework</li>
+            </p>
+
         </div>
-    
-
-        <div class="row">
-        
-            <div id="portfolio" class="section intro ">                                 
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/burger.png">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Lorna Burg<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://powerful-tundra-14272.herokuapp.com/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Lorna Burg<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px">A full-stack restuarant application where users order menu items, and can remove items from their order. Built using MySQL, Node, Express and Handlebars. </p>
-                        </div>
-                    </div>
-                </div>
-            
-
-           
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/gif.png">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Giphy Fun<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://lorstevens.github.io/giphy/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Giphy Fun<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px">Built using the Giphy API. Application displays gifs based on the button clicked. Gifs will animate when clicked.</p>
-                        </div>
-                    </div>
-                </div>
-
-            
-                <div class="col m4">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/friend.jpg">
-                        </div>
-                        <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4">Friend Finder<i class="material-icons right">arrow_upward</i></span>
-                            <p><a target="_blank" href="https://obscure-tor-34975.herokuapp.com/">Visit app</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Friend Finder<i class="material-icons right">close</i></span>
-                            <p class="description" style="font-size:13px" >A simple friend/dating application. Uses Node.js, Express and Materialize.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="modal-footer">
+            <a href="https://lorstevens.github.io/snapshot/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
         </div>
     </div>
-                                          
-                <div id="index-banner2">
-                <div class="row">
-                    <div class="col s12 m6 l6 right"><img class="responsive-img" src="./assets/images/lornabackground.jpg" alt="Unsplashed background img 1"></div>
 
-                    <div class="col s12 m6 l6 left">
-                    <div class="about">
+       
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Mavens/Mavericks</h4>
+            <p>A full stack social media app that pairs mentors and mentees together.</p>
+                <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>React.js</li>
+                <li>Axios</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Node</li>
+                <li>Materialize CSS Framework</li>
+            </p>
+
+        </div>
+        <div class="modal-footer">
+            <a href="https://mavens-and-mavericks.herokuapp.com/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Train Time</h4>
+            <p>Uses Firebase and Moment.js to store and calculate the next train arrival.</p>
+                <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>Firebase</li>
+                <li>Moment.js</li>
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://lorstevens.github.io/traintime/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <h4>Lorna Burg</h4>
+            <p>A full-stack restuarant application where users order menu items, and can remove items from their order.</p>
+            <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>MySQL</li>
+                <li>Node</li>
+                <li>Express.js</li>
+                <li>Handlebars</li>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://powerful-tundra-14272.herokuapp.com/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <h4>Giphy Fun</h4>
+            <p>Built using the Giphy API. Application displays gifs based on the button clicked. Gifs will animate when clicked.</p>
+            <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>Giphy API</li>
+                <li>Javascript/JQuery</li>
+                <li>Materialize CSS Framework</li>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://lorstevens.github.io/giphy/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <h4>Friend Finder</h4>
+            <p>A simple friend/dating application.</p>
+            <p style="font-weight: bold; margin-bottom: 5px">Tech Used:
+                <li>Node</li>
+                <li>Express</li>
+                <li>Materialize CSS Framework</li>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://obscure-tor-34975.herokuapp.com/" class="waves-green btn-flat" style="color:#ff9800" target="_blank">Visit App</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color:#ff9800">Close</a>
+        </div>
+    </div>
+
+
+
+
+<!--ABOUT ME SECTION -->
+
+    </div>
+    <div id="index-banner2">
+        <div class="row">
+            <div class="col s12 m6 l6 right"><img class="responsive-img" src="./assets/images/lornabackground.jpg" alt="Unsplashed background img 1"></div>
+            <div class="col s12 m6 l6 left">
+                <div class="about">
                     <h3 class="grey-text">Who is Lorna?</h3>
                     <!-- <span class="lorna black-text text-lighten-4">Who is Lorna?</span> -->
                     <br>
                     <span class="bio">These days you can usually find me sitting behind a laptop or cruising around Austin on my bicycle. I’m currently enrolled in the Full Stack Development Boot Camp at UT Austin, specializing in the MERN stack. </span>
-                    </div>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <footer id="connect" class="page-footer grey darken-4">
+        <div class="footer container">
+            <div class="row">
+                <div class="col m8 l8 s12">
+                    <h5 class="white-text">Let's talk</h5>
+                    <p class="grey-text text-lighten-4">Need help on a project? Want to chat over coffee?
+                        <br><strong>Email: lornacstevens@gmail.com</strong></p>
                 </div>
-
-            <footer id="connect" class="page-footer grey darken-4">
-                <div class="footer container">
-                    <div class="row">
-                        <div class="col m8 l8 s12">
-                            <h5 class="white-text">Let's talk</h5>
-                            <p class="grey-text text-lighten-4">Need help on a project? Want to chat over coffee?
-                            <br><strong>Email: lornacstevens@gmail.com</strong></p>
-                        </div>
-                        <div class="col m4 l4 s12">
-                            <h5 class="white-text">Connect</h5>
-                            <ul>
-                                <a class="white-text" href="https://www.linkedin.com/in/lornastevens/" target="_blank"><img src="./assets/images/linkedin.png" alt="linkedin"></a>
-                                <a class="white-text" href="https://github.com/lorstevens" target="_blank"><img src="./assets/images/github.png" alt="github"></a>
-                                <a class="white-text" href="https://twitter.com/lornasocool" target="_blank" target="_blank"><img src="./assets/images/twitter.png" alt="twitter"></a>
-                            </ul>
-                        </div>
-                    </div>
-
+                <div class="col m4 l4 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <a class="white-text" href="https://www.linkedin.com/in/lornastevens/" target="_blank"><img src="./assets/images/linkedin.png" alt="linkedin"></a>
+                        <a class="white-text" href="https://github.com/lorstevens" target="_blank"><img src="./assets/images/github.png" alt="github"></a>
+                        <a class="white-text" href="https://twitter.com/lornasocool" target="_blank" target="_blank"><img src="./assets/images/twitter.png" alt="twitter"></a>
+                    </ul>
                 </div>
-
-                <div class="footer-copyright">
-                    <div class="container">
-                        <p style="text-align: center">Copyright © 2018 - Lorna Stevens</p>
-                    </div>
-                </div>
-            </footer>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p style="text-align: center">Copyright © 2018 - Lorna Stevens</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+
+<!--Materialize JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!--app.js script tag-->
 <script src="./assets/javascript/app.js"></script>
 
 </html>

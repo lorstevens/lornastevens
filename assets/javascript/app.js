@@ -1,22 +1,47 @@
-(function($) {
-  $(function() {
+
 
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $('#download-button').click(function() {
-      // $('html, body').animate({
-      //   scrollTop: $(".intro").offset().top
-      // }, 2000);
-    });
-  }); // end of document ready
-})(jQuery); // end of jQuery name space 
+    $('.modal').modal();
+
+
+function resizeGridItem(item){
+  grid = document.getElementsByClassName("grid")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+    item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+
+
+
 
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = parseInt(period, 10) || 500;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -35,7 +60,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 200 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -45,7 +70,7 @@ TxtRotate.prototype.tick = function() {
   } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
-    delta = 500;
+    delta = 100;
   }
 
   setTimeout(function() {
@@ -68,3 +93,4 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
