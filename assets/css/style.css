@@ -19,8 +19,8 @@ h5 {
 /*PROJECT BOARD CSS */
 
 .projects {
-    margin-top: 2%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 8%;
     font-family: 'Satisfy', cursive;
     text-align: center;
     width: 100%;
@@ -185,8 +185,8 @@ html {
   margin-top: -4%;
 }
 
-.firstRow{
-  margin-top: 5%;
+.row.secondRow{
+  margin-bottom: 8%;
 }
 
 
