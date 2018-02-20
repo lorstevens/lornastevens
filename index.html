@@ -32,13 +32,12 @@
 
 <!--Intro Parallax-->
     <div id="index-banner" class="parallax-container">
-        <!-- <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a> -->
         <div class="navbar-fixed">
             <a class='dropdown-button fixed' href="#" data-activates="dropdown1" class="button-collapse text-darken-4 grey-text"><i class="material-icons white-text">menu</i></a>
             <!-- Dropdown Structure -->
             <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="#index-banner2" class="grey-text">About</a></li>
-                <li><a href="#projectBoard" class="grey-text">Portfolio</a></li>
+                <li><a href="#portfolio" class="grey-text">Portfolio</a></li>
                 <li><a href="#connect" class="grey-text">Connect</a></li>
             </ul>
         </div>
@@ -72,175 +71,88 @@
     </div>
 
 
-<!--ProjectBoard Grid-->
-    <div class="wrapper" id="projectBoard">
+
+<!--PROJECT BOARD -->
+
+<div class="section project" id="portfolio">
+    <div class="container">
         <h3 class="projects grey-text">Check out some of my projects</h3>
-        <div class="masonry">
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/burger.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">Lorna Burg
-                            <br>
-                            <i href="#modal4" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+        <div class="row firstRow">
+            <div class="col s12 m4">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/burger.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Lorna Burg</h2>
+                            <a class="info modal-trigger" href="#modal4">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/train.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">TrainTime
-                            <br>
-                            <i href="#modal3" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+            <div class="col s12 m4">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/train.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Train Time</h2>
+                            <a class="info modal-trigger" href="#modal3">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/mav.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">Mavens/Mavericks
-                            <br>
-                            <i href="#modal2" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+            <div class="col s12 m4">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/friend.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Friend Finder</h2>
+                            <a class="info modal-trigger" href="#modal6">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/snap.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">Snapshot
-                            <br>
-                            <i href="#modal1" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 giphyImage">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/leslie.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Giphy Fun</h2>
+                            <a class="info modal-trigger" href="#modal5">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/friend.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">Friend Finder
-                            <br>
-                            <i href="#modal6" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+            <div class="col s12 m4">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/mav.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Mavens/Mavericks</h2>
+                            <a class="info modal-trigger" href="#modal2">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="port-container">
-                    <img src="./assets/images/leslie.png" alt="Avatar" class="imageBird">
-                    <div class="overlay">
-                        <div class="text">Giphy Fun
-                            <br>
-                            <i href="#modal5" style="font-size: 50px" class="material-icons modal-trigger">info</i>
+            <div class="col s12 m4 snapshotImage">
+                <div class="grid-item">
+                    <div class="hovereffect">
+                        <img src="./assets/images/snap.png" alt="Avatar" class="imageBird">
+                        <div class="overlay">
+                            <h2>Snapshot</h2>
+                            <a class="info modal-trigger" href="#modal1">Info</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-<!--Project Section/not currently using-->
-    <!-- <div id= "projectBoard" class="animateWidth masonry" style="margin: 0px auto; position: relative; height: 950px; width: 925px;">
-    <h3 class="projects grey-text">Check out some of my projects</h3>
- <div class="grid">
-    <div class="item photo">
-    <div class="content">
-      <div class="port-container">
-                <img src="./assets/images/burger.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">Lorna Burg
-                        <br>
-                        <i href="#modal4" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-    </div>
-  </div>
-  
-  <div class="item photo">
-    <div class="content">
-      <div class="port-container">
-                <img src="./assets/images/friend.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">Friend Finder
-                        <br>
-                        <i href="#modal6" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-    </div>
-  </div>
-  <div class="item photo">
-    <div class="content">
-              <div class="port-container">
-                <img src="./assets/images/mav.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">Mavens and Mavericks
-                        <br>
-                        <i href="#modal2" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-    </div>
-  </div>
-  
-  <div class="item project">
-    <div class="content">
-
-      <div class="port-container">
-                <img src="./assets/images/train.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">TrainTime
-                        <br>
-                        <i href="#modal3" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-    </div>
-  </div>
-
-
-
-  
-  <div class="item photo">
-    <div class="content">
-     <div class="port-container">
-                <img src="./assets/images/snap.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">Snapshot
-                        <br>
-                        <i href="#modal1" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-    </div>
-  </div>
-  
-  <div class="item project">
-    <div class="content">
-
-        <div class="port-container">
-                <img src="./assets/images/leslie.png" alt="Avatar" class="imageBird">
-                <div class="overlay">
-                    <div class="text">Giphy Fun
-                        <br>
-                        <i href="#modal5" style="font-size: 50px" class="material-icons modal-trigger">info</i>
-                    </div>
-                </div>
-            </div>
-     
-    </div>
-  </div>
 </div>
-</div> -->
+
+
+
+
 
 <!-- MODALS -->
     <div id="modal1" class="modal">
