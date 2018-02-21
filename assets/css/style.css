@@ -1,4 +1,8 @@
 
+
+
+
+
 /* Non-specific CSS */  
 
 h3{
@@ -178,14 +182,19 @@ html {
 
 
 .snapshotImage{
-  margin-top: -10.6%;
+  margin-top: -6.7%;
 }
 
-.giphyImage{
-  margin-top: -4%;
+
+.leslieImage{
+  margin-top: -20%;
 }
 
-.row.secondRow{
+.trainImage{
+  margin-top: -10%
+}
+
+.row.thirdRow{
   margin-bottom: 8%;
 }
 
