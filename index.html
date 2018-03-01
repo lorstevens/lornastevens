@@ -32,6 +32,8 @@
     <!--Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/animate.min.css">
+
     <!--Masonry-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
@@ -81,101 +83,57 @@
     </div>
 
 
-
-<!--PROJECT BOARD -->
-
 <div class="section project" id="portfolio">
     <div class="container">
         <h3 class="projects grey-text">Check out some of my projects</h3>
-        <div class="row firstRow">
-            <div class="col s12 m4">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/burger.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Lorna Burg</h2>
-                            <a class="info modal-trigger" href="#modal4">Info</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="masonry">
+            <div class="item wow jello">
+                <a class="modal-trigger" href="#modal4">
+                    <img src="./assets/images/burger.png">
+                </a>
             </div>
-            <div class="col s12 m4">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/mav.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Mavens/Mavericks</h2>
-                            <a class="info modal-trigger" href="#modal2">Info</a>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="item">
+                <a class="info modal-trigger" href="#modal3">
+                    <img src="./assets/images/train.png">
+                </a>
             </div>
-            <div class="col s12 m4">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/friend.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Friend Finder</h2>
-                            <a class="info modal-trigger" href="#modal6">Info</a>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="item">
+                <a class="modal-trigger" href="#modal5">
+                    <img src="./assets/images/leslie.png">
+                </a>
             </div>
-        </div>
-        <div class="row secondRow">
-            <div class="col s12 m4 dentistImage">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/dentist.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Natalie Lee DDS</h2>
-                            <a class="info modal-trigger" href="#modal7">Info</a>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="item">
+                <a class="modal-trigger" href="#modal1">
+                    <img src="./assets/images/snap.png">
+                </a>
             </div>
-            <div class="col s12 m4 trainImage">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/train.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Train Time</h2>
-                            <a class="info modal-trigger" href="#modal3">Info</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="item">
+                <a class="info modal-trigger" href="#modal6">
+                    <img src="./assets/images/friend.png">
+                </a>
             </div>
-            <div class="col s12 m4 snapshotImage">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/snap.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Snapshot</h2>
-                            <a class="info modal-trigger" href="#modal1">Info</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="item">
+                <a class="modal-trigger" href="#modal7">
+                    <img src="./assets/images/dentist.png">
+                </a>
             </div>
-        </div>
+
+            <div class="item">
+                <a class="modal-trigger" href="#modal2">
+                    <img src="./assets/images/mav.png">
+                </a>
     
-        <div class="row thirdRow">
-            <div class="col s12 m4 leslieImage">
-                <div class="grid-item">
-                    <div class="hovereffect">
-                        <img src="./assets/images/leslie.png" alt="Avatar" class="imageBird">
-                        <div class="overlay">
-                            <h2>Giphy Fun</h2>
-                            <a class="info modal-trigger" href="#modal5">Info</a>
-                        </div>
-                    </div>
-                </div>
-            </div>         
-        </div>
-    </div>
+  </div>
+ </div> 
+</div>
+  
+
 
 
 </div>
-
 
 
 
@@ -296,8 +254,8 @@
     </div>
     <div id="index-banner2">
         <div class="row">
-            <div class="col s12 m6 l6 right"><img class="responsive-img" src="./assets/images/lornabackground.jpg" alt="Unsplashed background img 1"></div>
-            <div class="col s12 m6 l6 left">
+            <div class="col s12 l6 right"><img class="responsive-img" src="./assets/images/lornabackground.jpg" alt="Unsplashed background img 1"></div>
+            <div class="col s12 l6 left">
                 <div class="about">
                     <h3 class="grey-text">Who is Lorna?</h3>
                     <br>
@@ -336,6 +294,8 @@
 
 <!--Materialize JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script src="js/wow.min.js"></script>
 
 <!--app.js script tag-->
 <script src="./assets/javascript/app.js"></script>

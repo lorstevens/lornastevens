@@ -1,5 +1,6 @@
 
 
+
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.modal').modal();
@@ -75,3 +76,4 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+new WOW().init();
